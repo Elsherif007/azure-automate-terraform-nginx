@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "msheriftfstates"
-    storage_account_name = "tfstatedevops"
-    container_name       = "terraformgithubexample"
-    key                  = "terraformgithubexample.tfstate"
+    storage_account_name = "msheriftf"
+    container_name       = "tfstatedevops"
+    key                  = "tfstatedevops.tfstate"
   }
 }
 
@@ -37,3 +37,5 @@ resource "azurerm_subnet" "subnet" {
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefix       = "192.168.0.0/24"
 }
+
+
